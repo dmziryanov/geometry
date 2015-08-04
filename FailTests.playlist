@@ -1,0 +1,1 @@
+<Playlist Version="1.0"><Add Test="TestingGeometry.TestRightTriangle.TestRightTriangleWrongDueAccuracy" /><Add Test="TestingGeometry.TestRightTriangle.TestSquareWrong" /><Add Test="TestingGeometry.TestRightTriangle.TestWrongTriangleParam" /></Playlist>
