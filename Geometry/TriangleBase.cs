@@ -4,21 +4,22 @@ namespace Geometry
 {
     public abstract class TriangleBase
     {
-	    protected double smallEdge1;
-	    protected double smallEdge2;
-	    protected double longestEdge;
-
+	    protected double[] edges;
+	    
 	    public TriangleBase()
 	    {
 
 	    }
 
 	    public TriangleBase(double pa, double pb, double pc)
-		{
-			smallEdge1 = Math.Min(pa, pb);
-			smallEdge2 = Math.Min(pb, pc);
-			longestEdge = Math.Max(Math.Max(pa, pb), pc);
-			if (smallEdge1 + smallEdge2 < longestEdge)
+	    {
+		    edges[0] = pa;
+			edges[1] = pb;
+		    edges[2] = pc;
+
+			Array.Sort(edges);
+
+			if (edges[0] + edges[1] < edges[2])
 				throw new ArgumentOutOfRangeException("Not triangle: sum of smaller edges is less then longest edge");
 		}
 

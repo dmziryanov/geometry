@@ -27,20 +27,20 @@ namespace TestingGeometry
 		}
 
 		[TestMethod]
-		public void TestSquareWrong()
+		public void WrongSquare()
 		{
 			var t = new RightTriangle(534, 712, 890);
 			Assert.AreEqual(190105, t.GetSquare());
 		}
 
 		[TestMethod]
-		public void TestRightTriangleWrongDueAccuracy()
+		public void WrongTriangleDueAccuracy()
 		{
 			var t = new RightTriangle(10, 10, 14.14213562373095);
 		}
 
 		[TestMethod]
-		public void TestWrongRightTriangleParam()
+		public void WrongParam()
 		{
 			var t = new RightTriangle(10, 10, 15);
 		}
