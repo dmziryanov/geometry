@@ -4,7 +4,7 @@ namespace Geometry
 {
     public abstract class TriangleBase
     {
-	    protected double[] edges;
+	    protected double[] edges = new Double[3];
 	    
 	    public TriangleBase()
 	    {
